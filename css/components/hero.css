@@ -6,13 +6,13 @@
 }
 .hero::before {
   position: absolute;
-  content: url("../../img/hero-section-connector-rectangle.svg");
+  content: url("/img/hero-section-connector-rectangle.svg");
   bottom: -26px;
   right: 8%;
 }
 
 .hero__container {
-  background: url("../../img/hero_bg-headohones.png") right center no-repeat;
+  background: url("/img/hero_bg-headohones.png") right center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +59,7 @@
   }
   .hero__title-section::before {
     content: "";
-    background: url("../../img/hero_bg-headohones.png") center center/contain no-repeat;
+    background: url("/img/hero_bg-headohones.png") center center/contain no-repeat;
     width: 32.3rem;
     height: 32.3rem;
     margin-bottom: 6.4rem;
