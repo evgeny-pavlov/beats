@@ -1,0 +1,26 @@
+// normalize
+@import url('./layout/nomalise.css');
+
+// setups
+@import url('./layout/fonts.css');
+@import "./media.scss";
+// @import "mixins";
+@import "./layout.scss";
+
+//components
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/features.scss";
+@import "./components/btn.scss";
+@import "./components/section.scss";
+@import "./components/headline.scss";
+@import "./components/reasons.scss";
+@import "./components/reason.scss";
+@import "./components/reviews.scss";
+@import "./components/interative-avatar.scss";
+@import "./components/form.scss";
+@import "./components/order-section.scss";
+@import "./components/radio.scss";
+@import "./components/fixed-menu.scss";
+@import "./components/hamburger.scss";
+@import "./components/footer.scss";

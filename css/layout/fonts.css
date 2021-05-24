@@ -1,0 +1,35 @@
+/* Play */
+
+@font-face {
+    font-family: 'play';
+    src: url('../../fonts/play-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/play-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'play';
+    src: url('../../fonts/play-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/play-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Alegreya Sans */
+
+@font-face {
+    font-family: 'alegreya_sans';
+    src: url('../../fonts/alegreyasans-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/alegreyasans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alegreya_sans';
+    src: url('../../fonts/alegreyasans-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/alegreyasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
