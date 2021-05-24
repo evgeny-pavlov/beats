@@ -1,86 +1,26 @@
-html{
-    height: 100%;
-}
+// normalize
+@import url('./layout/nomalise.css');
 
-body{
-    height: 100%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    color: #292929;
-}
+// setups
+@import url('./layout/fonts.css');
+@import "./media.scss";
+// @import "mixins";
+@import "./layout.scss";
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
- a{
-     text-decoration: none;
-     color: inherit;
-}
-
- *,::before,::after{
-    box-sizing: border-box;
-}
-
- .wrapper{
-     height: 100%;
-}
-
-.section{
-    height: 100%;
-    margin: auto;
-}
-
-.container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.fixed-menu-pager{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 45%;
-    right:2%;
-}
-
-.fixed-menu-pager__item{
-    width: 18px;
-    height: 18px;
-    border-radius: 50px;
-    border: 1px solid transparent;
-    position: relative;
-    margin-bottom: 1px;
-    transition: all .3s;
-    &:hover{
-        border: 1px solid gray;
-    }
-    &-active{
-        border-color: #CA1B36;
-        .fixed-menu-pager__link{
-            background-color: #CA1B36;
-        }
-    }
-}
-
-.fixed-menu-pager__link{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: gray;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
- @import "hero.scss";
- @import "reason.scss";
- @import "feedbacks.scss";
- @import "order.scss";
+//components
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/features.scss";
+@import "./components/btn.scss";
+@import "./components/section.scss";
+@import "./components/headline.scss";
+@import "./components/reasons.scss";
+@import "./components/reason.scss";
+@import "./components/reviews.scss";
+@import "./components/interative-avatar.scss";
+@import "./components/form.scss";
+@import "./components/order-section.scss";
+@import "./components/radio.scss";
+@import "./components/fixed-menu.scss";
+@import "./components/hamburger.scss";
+@import "./components/footer.scss";
