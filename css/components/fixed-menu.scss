@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .fixed-menu{
     display: flex;
     flex-direction: column;
@@ -38,3 +39,45 @@
     transform: translate(-50%);
 }
 
+=======
+.fixed-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    right:3%;
+}
+
+.fixed-menu__item{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 5rem;
+    border: 0.1rem solid transparent;
+    position: relative;
+    margin-bottom: 0.1rem;
+    transition: all .3s;
+    &:hover{
+        border: 0.1rem solid gray;
+    }
+
+    &--active{
+        border-color: #CA1B36;
+    }
+}
+
+.fixed-menu__item--active .fixed-menu__link {
+    background-color: #CA1B36;
+}
+
+.fixed-menu__link{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+>>>>>>> 9131f4a088039262e88de0b4ec6486454a1b3f78

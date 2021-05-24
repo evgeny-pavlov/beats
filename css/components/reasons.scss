@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../media.scss";
 
 .reasons-section {
@@ -68,4 +69,76 @@
             display: none;
         }
     }
+=======
+@import "../media.scss";
+
+.reasons-section {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../../img/reasons-section-connector-tiangle.svg");
+        bottom: -24px;
+        left: 8%;
+    }
+}
+
+.container--reasons-section{
+    @include tablets {
+        width: 100%;
+    }
+    
+}
+
+.reasons__list {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+
+    @include phones {
+        
+    }
+}
+
+.reasons__item{
+    flex:1;
+    padding: 0 5%;
+    position: relative;
+
+    &::before {
+        content: url("../../img/reason-separator.png");
+        position: absolute;
+        // top: 20%;
+        // right: -20%;
+        top: 5.8rem;
+        right: -6.5rem;
+        transform: translateX(-50%);
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+>>>>>>> 9131f4a088039262e88de0b4ec6486454a1b3f78
 }

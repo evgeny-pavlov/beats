@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../media.scss";
 
 .radio {
@@ -59,4 +60,67 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+=======
+@import "../media.scss";
+
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 1.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: 0;
+
+            &::before {
+                background: url("../../img/check.png") center no-repeat;
+            }
+        }
+        
+        @include tablets {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include phones {
+        margin-bottom: 1rem;
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &::before {
+            display: block;
+        }
+    }
+}
+
+.radio__visible {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    border-radius: 50%;
+    background: #FFF;
+    margin-right: 1rem;
+
+    &:before {
+        content: "";
+        width: 1.4rem;
+        height: 1.4rem;
+        background: #E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+>>>>>>> 9131f4a088039262e88de0b4ec6486454a1b3f78
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./layout/variables.scss";
 
 // @function rem($px) {
@@ -16,4 +17,24 @@
     @media screen and (max-width: $phones) {
         @content;
     }
+=======
+@import "./layout/variables.scss";
+
+// @function rem($px) {
+//     @return $px / $baseFontSize + 0rem;
+// }
+
+// (?!rem\()-?\d+px(?!\))
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+>>>>>>> 9131f4a088039262e88de0b4ec6486454a1b3f78
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../layout/variables.scss";
 
 .hamburger {
@@ -16,4 +17,24 @@
     background: $colorBlack;
     height: 4px;
     border-radius: 10px;
+=======
+@import "../layout/variables.scss";
+
+.hamburger {
+    width: 26px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets {
+        display: inline-flex;
+    }
+}
+.hamburger__plank {
+    display: block;
+    background: $colorBlack;
+    height: 4px;
+    border-radius: 10px;
+>>>>>>> 9131f4a088039262e88de0b4ec6486454a1b3f78
 }
