@@ -1,0 +1,82 @@
+@import "./layout/variables.scss";
+@import "../media.scss";
+
+.reason__image{
+    margin-bottom: 2.4rem;
+    
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+
+.reason {
+    text-align: center;
+    margin-bottom: 2.4rem;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        margin-bottom: 3.1rem;
+    }
+}
+
+.reason__icon-wrapper {
+    display: inline-block;
+    width: 12.8rem;
+    height: 12.8rem;
+    position: relative;
+    background: $reasonSectionGrey;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include phones {
+    margin-left: 0.8rem;
+    margin-right: 1.2rem;
+    }
+}
+
+.reason__icon{
+    width: 6.8rem;
+    height: 6.8rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reason__text {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1.2rem;
+    }
+}
+
+.reason__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 0.7rem;
+
+    @include tablets {
+        display: flex;
+        min-height: 5.2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include phones {
+        min-height: 2.6rem;
+        padding: 0;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+}
+
+.reason__desc {
+    @include phones {
+        line-height: 1.3;
+    }
+}
