@@ -64,18 +64,19 @@ task("styles", () => {
 });
 
 const libs = [
-    "node_modules/jquery/dist/jquery.min.js",
+    // "node_modules/jquery/dist/jquery.min.js",
     "src/js/*.js"
 ];
 
 task("scripts" , () =>{
     return src(libs)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(concat("main.js"))
         .pipe(sourcemaps.write())
         // .pipe(uglify())
         .pipe(dest("dist/js"))
-        .pipe(reload({stream: true}));
+        // .pipe(reload({stream: true}))
+        ;
 });
 
 task("server", () => {
@@ -100,6 +101,8 @@ task("default",
     )
 );
 
-task('build',
- series('clean',parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts"), parallel("watch", "server"))
+task("build",
+ series("clean",parallel("copy:html", "copy:fonts", "copy:img", "styles", "scripts"), 
+//  parallel("watch", "server")
+ )
 );
